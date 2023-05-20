@@ -46,15 +46,11 @@ nav ul li a:hover{
     display:flex;
     color: #008080;
     padding-left: 10vw;
-    
-    margin-top: 13%;
     word-wrap: normal;
-    
 }
 
 .cont img{
-    margin-top: -100px;
-    align-items:end;
+    float: right;
     width: 40vw;
 }
 
