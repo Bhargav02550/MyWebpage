@@ -4,47 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Personal Portfolio Website</title>
+    <title>Bhargav's Portfolio</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+
+      nav {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(22, 72, 72);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 20px;
+        list-style-type: none;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+        align-items: center;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+        color: rgb(0, 148, 148);
+      }
+      .rightsection {
+        margin: 50px 0;
+      }
+      .green {
+        color: rgb(2, 42, 33);
+        font-weight: bold;
+      }
+      #element {
+        color: rgb(3, 60, 41);
+      }
+    </style>
   </head>
   <body>
-    <div class="main">
+    <header>
       <nav>
-        <img src="images/bhargav.png" />
-
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT ME</a></li>
-        </ul>
+        <div class="left">Bhargav</div>
+        <div class="right">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
       </nav>
-      <div class="cont">
-        <h1>
-          Hi, I'm bhargav<br />
-          <span>
-            A Full Stack Developer and had sufficient knowledge in cross
-            platfrom application development using Flutter.
-          </span>
-        </h1>
-      </div>
-      <div class="heading">About me</div>
-      <div class="horz" id="about">
-        <div class="para">
-          Highly motivated and skilled Flutter and front-end developer seeking
-          opportunities to contribute my expertise and passion for creating
-          exceptional user experiences. Eager to leverage my knowledge gained
-          through B.Tech studies and hands-on projects to add value to
-          multinational companies in the tech industry.
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="green">Bhargav</span>
+          <div>and I'm a passionate</div>
+          <span id="element"></span>
         </div>
-        <div class="img">
-          <img src="images/bhargav1.JPG" />
+        <div class="rightsection">
+          <img src="images/Programming-amico.svg" alt="" />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "3D Desginer",
+          "Game Developer",
+          "Flutter Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
